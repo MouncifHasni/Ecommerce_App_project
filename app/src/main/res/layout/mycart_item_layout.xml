@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:elevation="3dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/container0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <ImageView
+                android:id="@+id/mycart_productImage"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/red_zone"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mycart_item_title"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="2"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@id/container0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sumsung galaxy note 3"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/mycart_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mycart_item_title"
+            android:text="70 Dhs"
+            android:layout_toRightOf="@id/container0"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/mycart_lastprice"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 Dhs"
+            android:textSize="10sp"
+            android:layout_toRightOf="@id/mycart_item_price"
+            android:layout_below="@id/mycart_item_title"/>
+        <View
+            android:id="@+id/divider5"
+            android:layout_below="@id/mycart_item_title"
+            android:layout_width="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/mycart_item_price"
+            android:layout_height="1dp"
+            android:background="#838080" />
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/container0"
+            android:layout_below="@id/mycart_item_price"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mycart_item_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/remove_icon"/>
+
+            <RelativeLayout
+                android:layout_marginEnd="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/remove_qty_btn"
+                    android:layout_gravity="center"
+                    android:layout_toLeftOf="@id/mycart_qte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/remove_circle_icon"/>
+                <TextView
+                    android:id="@+id/mycart_qte"
+                    android:layout_gravity="center"
+                    android:text="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:layout_toLeftOf="@id/add_qty_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/add_qty_btn"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add_icon"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

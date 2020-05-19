@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MyCartFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mycart_items_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d4d4d4" />
+
+            <TextView
+                android:layout_below="@id/divider3"
+                android:id="@+id/txtview"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/total_price_txt"
+                android:text="200 DH"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <View
+                android:id="@+id/divider4"
+                android:layout_below="@id/total_price_txt"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d4d4d4" />
+
+            <Button
+                android:id="@+id/continue_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:background="@color/red"
+                android:stateListAnimator="@null"
+                android:textSize="16sp"
+                android:layout_below="@id/divider4"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

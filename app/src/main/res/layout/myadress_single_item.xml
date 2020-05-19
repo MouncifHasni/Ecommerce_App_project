@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearlayout4"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/my_adress_single_item_checkbox"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_light"/>
+
+            <TextView
+                android:id="@+id/myadress_single_item_adress"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@id/linearlayout4"
+                android:text="Sumsung"
+                android:maxLines="6"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/next_icon"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"/>
+
+</LinearLayout>

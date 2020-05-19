@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminFragments.AdminCategoryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/linear1"
+            android:id="@+id/admin_cat_grid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:orientation="horizontal"
+            android:elevation="8dp">
+            <LinearLayout
+                android:id="@+id/add_category_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Add Category"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:drawablePadding="8dp"
+                    android:drawableEnd="@drawable/add_icon"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:drawableTint="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

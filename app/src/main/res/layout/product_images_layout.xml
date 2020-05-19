@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:elevation="3dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/client_product_details_image"
+        android:src="@drawable/placeholder"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="250dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_toWishList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/fav_icon"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"/>
+    <TextView
+        android:id="@+id/client_product_details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Title"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        android:layout_below="@id/client_product_details_image"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:background="@drawable/slider_background"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#EDF44336"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/client_product_details_title">
+        <TextView
+            android:id="@+id/client_product_details_rating"
+            android:text="4.5"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="3dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/star_icon"
+            android:tint="#FFEB3B"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="1dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/client_product_details_nbOfrates"
+        android:text="(8,500)ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/linearlayout1"
+        android:layout_below="@id/client_product_details_title"
+        android:layout_marginStart="4dp"/>
+    <TextView
+        android:id="@+id/client_product_details_price"
+        android:text="200 DH"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout1"
+        android:layout_marginStart="16dp"/>
+    <TextView
+        android:id="@+id/client_product_details_lastPrice"
+        android:text="450 DH"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout1"
+        android:layout_toRightOf="@id/client_product_details_price"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="4dp" />
+
+    <View
+        android:id="@+id/client_product_details_lastprice_divider"
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+        android:visibility="gone"
+        android:layout_marginStart="4dp"
+        android:background="#80000000"
+        android:layout_below="@id/linearlayout1"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@id/client_product_details_price"/>
+
+</RelativeLayout>

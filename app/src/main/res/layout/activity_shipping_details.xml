@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ShippingDetailsActivity"
+    android:background="#0D000000">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_marginBottom="4dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="4dp">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/appbar_2"
+        android:id="@+id/text3"
+        android:text="Shipped Items "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:elevation="3dp"
+        android:background="@color/white"
+        android:layout_below="@id/text3"
+        android:id="@+id/shiiping_detail_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:elevation="3dp"
+        android:background="@color/white"
+        android:id="@+id/container_info"
+        android:layout_below="@id/shiiping_detail_recyclerview"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:textColor="@color/black"
+                android:text="Ship to"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/shipping_details_adress"
+                android:text="user name \n adresss\n 06xxxx65"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/next_icon"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/shipping_divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d4d4d4" />
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:text="Pay with"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/shipping_details_payment"
+                android:text="Select payment option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/next_icon"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:elevation="3dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/shipping_divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d4d4d4" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/shipping_divider6"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:text="Shipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/shipping_divider6"
+            android:textSize="14sp"
+            android:id="@+id/shipping_details_shippingcost"
+            android:text="Free"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_below="@id/shipping_details_shippingcost"
+            android:id="@+id/shiping_divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d4d4d4" />
+
+        <TextView
+            android:layout_below="@id/shiping_divider3"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Total"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_below="@id/shipping_details_shippingcost"
+            android:id="@+id/shipping_details_total_price"
+            android:text="200 DH"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:id="@+id/divider4"
+            android:layout_below="@id/shipping_details_total_price"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d4d4d4" />
+
+        <Button
+            android:padding="4dp"
+            android:id="@+id/shiiping_detail_comfirmbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Comfirm And pay"
+            android:background="@color/red"
+            android:stateListAnimator="@null"
+            android:textSize="16sp"
+            android:layout_below="@id/divider4"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Ecommerce App</string>
+    <string name="title_activity_login">Login</string>
+    <string name="app_description_main">Buy electronics, cars, clothes,\ncollectibles &amp; more \non MyStore</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- Server IP -->
+    <string name="server_ip">http://192.168.1.6:3000/</string>
+
+    <!-- Spinners -->
+    <string-array name="conditions">
+        <item>Select </item>
+        <item>New</item>
+        <item>Used</item>
+    </string-array>
+
+    <string-array name="deliverytime">
+        <item>Select </item>
+        <item>7 days</item>
+        <item>15 days</item>
+        <item>30 days</item>
+    </string-array>
+
+    <string-array name="returnType">
+        <item>Select </item>
+        <item>Not accepted</item>
+        <item>Return withing 15 days</item>
+        <item>Return withing 30 days</item>
+    </string-array>
+
+
+</resources>

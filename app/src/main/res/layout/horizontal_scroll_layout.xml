@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/slider_background"
+    android:elevation="3dp"
+    android:layout_margin="8dp"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/horizontal_layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Daily Deals"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/horizontal_scroll_layout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="View All"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/horizontal_scroll_layout_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+
+
+</LinearLayout>
